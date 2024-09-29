@@ -14,7 +14,7 @@ function FeaturesSection() {
   // Check if the component is in view
   const isInView = useInView(ref, { once: false });
   return (
-    <div className='pt-20 flex flex-col gap-7 bg-white w-[85%] mx-auto'>
+    <div className='py-20 flex flex-col gap-7 bg-white w-[85%] mx-auto'>
       <FeatureSection
         title='Custom Code—API Integration'
         subTitle='API integration'
