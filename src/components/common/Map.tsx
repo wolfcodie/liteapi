@@ -1,17 +1,41 @@
-import React from 'react';
+'use client';
+import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
+import 'leaflet/dist/leaflet.css';
+import L from 'leaflet';
+import { useEffect } from 'react';
 
-function Map() {
+const MapComponent = () => {
+  const moroccoPosition: L.LatLngTuple = [31.7917, -7.0926];
+
+  useEffect(() => {
+    L.Icon.Default.mergeOptions({
+      iconRetinaUrl:
+        'https://unpkg.com/leaflet@1.7.1/dist/images/marker-icon-2x.png',
+      iconUrl: 'https://unpkg.com/leaflet@1.7.1/dist/images/marker-icon.png',
+      shadowUrl:
+        'https://unpkg.com/leaflet@1.7.1/dist/images/marker-shadow.png',
+    });
+  }, []);
+
   return (
-    <div className='border-dashed border border-primary rounded-lg w-full h-[100px] overflow-hidden '>
-      <iframe
-        src='https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d53181.18120247663!2d-7.6480512!3d33.583923199999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sma!4v1727581109439!5m2!1sen!2sma'
-        width='100%'
-        height='100%'
-        style={{ border: 0 }}
-        allowFullScreen={false}
-        loading='lazy'></iframe>
+    <div className='border-dashed border border-primary rounded-lg w-full h-[100px] overflow-hidden'>
+      <MapContainer
+        center={moroccoPosition}
+        zoom={6}
+        scrollWheelZoom={false}
+        style={{ height: '100%', width: '100%' }}>
+        <TileLayer
+          url='https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png'
+          attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+        />
+        <Marker position={moroccoPosition}>
+          <Popup>
+            Morocco! <br /> A beautiful place to visit.
+          </Popup>
+        </Marker>
+      </MapContainer>
     </div>
   );
-}
+};
 
-export default Map;
+export default MapComponent;
