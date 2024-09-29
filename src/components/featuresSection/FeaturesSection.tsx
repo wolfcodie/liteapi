@@ -71,7 +71,7 @@ function FeaturesSection() {
           animate={{ opacity: isInView ? 1 : 0, y: isInView ? '0%' : '200%' }}
           transition={{ duration: 1 }}>
           <img
-            className='max-lg:w-full max-lg:h-[100%]'
+            className='w-full  max-lg:h-[100%]'
             src='icons/layers.svg'
             alt='Background'
           />

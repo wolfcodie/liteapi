@@ -140,7 +140,7 @@ footer li {
 
 .footer-bottom {
   display: inline-flex;
-  align-items: center;
+
   gap: 20px;
   padding-block: 30px;
   color: white;
