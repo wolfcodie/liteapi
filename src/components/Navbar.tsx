@@ -9,7 +9,7 @@ function Navbar() {
   console.log(showMenu);
 
   return (
-    <nav className='flex items-center px-[8%] fixed top-0 left-0 w-full p-4 mx-auto max-w-[1500px] bg-white border-b  z-[100] border-b-[#F6F6F7]'>
+    <nav className='flex items-center px-[8%] fixed top-0 left-0 right-0 w-full p-4  bg-white border-b  z-[1000] border-b-[#F6F6F7]'>
       <div className='logo mr-10'>
         <Image src='/icons/Logo.svg' width={80} height={10} alt='Logo' />
       </div>

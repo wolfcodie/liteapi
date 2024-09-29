@@ -9,7 +9,7 @@ function HotelCard() {
         <div className=' main-picture relative'>
           <Image
             className='rounded-t-[4px]'
-            src={'/images/image.png'}
+            src={'/images/Image.png'}
             alt=''
             height={20}
             width={20}
