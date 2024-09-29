@@ -56,7 +56,7 @@ function MapWidget({ size = 'small' }: MapWidgetProps) {
         className={`${
           size === 'large' ? 'text-[10px]' : 'text-[6px]'
         } text-[#9897A0]`}>
-        London's historic landmarks offer some of the best day trips from the
+        Londons historic landmarks offer some of the best day trips from the
         city center. We preferred exploring quieter sites like the Roman Wall
         and St. Dunstan-in-the-East over more crowded attractions like the Tower
         of London.

@@ -1,7 +1,5 @@
 import Image from 'next/image';
 import React, { FC } from 'react';
-import CodeViewer from '../common/CodeViewer';
-import ApiTest from '../common/ApiTest';
 interface FeatureType {
   title: string;
   description: string;
