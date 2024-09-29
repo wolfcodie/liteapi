@@ -20,6 +20,7 @@ const config: Config = {
         text: '#585665',
         success: '#067647',
         successLight: '#DFF4EA',
+        smallText: '#4D5761',
       },
       backgroundImage: (theme) => ({
         'gradient-to-r': 'linear-gradient(to right, #6EE7B7, #3B82F6)',

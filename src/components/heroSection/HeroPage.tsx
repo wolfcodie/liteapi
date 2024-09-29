@@ -8,7 +8,7 @@ import HotelsCards from '../common/HotelsCards';
 
 function HeroPage() {
   return (
-    <section className=' flex flex-col justify-center items-center'>
+    <section className=' flex flex-col justify-center items-center main-bg pb-24'>
       <div className='w-[50%] mx-auto mt-20 text-center'>
         <h5 className='text-primary text-sm'>Solutions</h5>
         <h1 className='font-semibold text-[40px] mb-8 mt-3'>
@@ -19,7 +19,7 @@ function HeroPage() {
           <Button className='bg-transaprent text-black'>View docs</Button>
         </div>
       </div>
-      <div className='features flex items-center gap-16 w-[80%] container mt-28'>
+      <div className='features flex items-center justify-center gap-16 w-[80%] container mt-28'>
         <Feature
           icon='code-square.svg'
           title='Full code'
