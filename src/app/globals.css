@@ -14,13 +14,7 @@
   src: local('Lota Grotesque Alt 1 Semi Bold'), url('../../public/fonts/lota-grotesque-alt-1-webfont/Los\ Andes\ \ Lota\ Grotesque\ Alt\ 1\ Semi\ Bold.woff') format('woff');
 }
 
-@font-face {
-  font-family: 'Lota Grotesque Alt 1';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Lota Grotesque Alt 1 Regular'),
-    url('../../public/fonts/lota-grotesque-alt-1-webfont/Los\ Andes\ \ Lota\ Grotesque\ Alt\ 1\ Regular\ Italic.woff') format('woff');
-}
+
 
 
 

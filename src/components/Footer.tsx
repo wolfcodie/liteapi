@@ -15,7 +15,7 @@ function Footer() {
               alt='Logo'
             />
           </div>
-          <p className='text-lg text-white'>
+          <p className='text-lg text-white family-lota '>
             The fastest way to build travel apps
           </p>
         </div>

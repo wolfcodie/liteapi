@@ -16,8 +16,8 @@ function FeaturesSection() {
   return (
     <div className='py-20 flex flex-col gap-7 bg-white w-[85%] mx-auto'>
       <FeatureSection
-        title='Custom Code—API Integration'
-        subTitle='API integration'
+        title='API integration'
+        subTitle='Custom Code—API Integration'
         description='For developers seeking comprehensive control and the ability to tailor every aspect of their solution, our API offers direct integration capabilities, empowering you to customize and optimize every detail to meet your specific needs and preferences.'
         icon='code-square.svg'>
         <div className='flex-1 px-6 overflow-hidden max-lg:px-0'>
@@ -67,7 +67,7 @@ function FeaturesSection() {
           width={10}
         />
         <motion.div
-          className='layers'
+          className='layers pointer-events-none'
           initial={{ opacity: 0, y: '200%' }}
           animate={{ opacity: isInView ? 1 : 0, y: isInView ? '0%' : '200%' }}
           transition={{ duration: 1 }}>
@@ -77,7 +77,7 @@ function FeaturesSection() {
             alt='Background'
           />
         </motion.div>
-        <h2 className='text-4xl z-10 font-semibold max-lg:text-lg'>
+        <h2 className='text-4xl z-10 font-semibold max-lg:text-lg family-lota '>
           Start Earning Right Now
         </h2>
         <p className='text-base z-10 text-black mt-2 w-[35%] max-lg:text-xs max-lg:w-[60%] text-center'>

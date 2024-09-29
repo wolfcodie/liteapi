@@ -11,7 +11,7 @@ function HeroPage() {
     <section className=' flex flex-col justify-center items-center main-bg pb-24'>
       <div className='w-[50%] max-md:w-[90%] mx-auto mt-20 text-center'>
         <h5 className='text-primary text-sm'>Solutions</h5>
-        <h1 className='font-semibold text-[40px] mb-8 mt-3'>
+        <h1 className='font-semibold text-[40px] mb-8 mt-3 px-10'>
           From in-depth API access to a fully-branded white label website
         </h1>
         <div className='ctas'>
