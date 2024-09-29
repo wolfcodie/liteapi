@@ -18,7 +18,7 @@ function ApiTest({
         Get
       </span>
       <span
-        className='text-text font-medium text-wrap flex-1 overflow-hidden truncate'
+        className='text-text font-medium text-wrap flex-1 overflow-hidden truncate apilink'
         style={{ fontSize }}>
         https://api.liteapi.travel/v3.0/hotels/rates/hotel{'{ID}'}/roomtypes
       </span>

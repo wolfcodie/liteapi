@@ -23,7 +23,7 @@ const FeatureSection: FC<FeatureType> = ({
         reversed ? 'reversed' : ''
       } relative overflow-hidden h-[561px] max-lg:h-fit max-lg:p-5 max-lg:flex-col`}>
       <div
-        className={`flex flex-col flex-1 gap-3 ${
+        className={`flex flex-col flex-1 gap-3 items-start ${
           reversed == true && 'order-2'
         }`}>
         <div className='flex items-center gap-2'>
@@ -34,9 +34,9 @@ const FeatureSection: FC<FeatureType> = ({
             height={20}
           />
 
-          <span className='text-base font-normal '>{title}</span>
+          <span className='text-base font-normal font-Lota'>{title}</span>
         </div>
-        <h1 className='text-3xl font-semibold'>{subTitle}</h1>
+        <h1 className='text-3xl font-semibold family-lota'>{subTitle}</h1>
         <p className='text-text font-light text-base mt-2 max-lg:text-xs'>
           {description}
         </p>

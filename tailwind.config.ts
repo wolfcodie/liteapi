@@ -10,7 +10,6 @@ const config: Config = {
     extend: {
       fontFamily: {
         inter: ['Inter', 'sans-serif'],
-        lota: ['Lota Grotesque Alt 3', 'serif'],
       },
       colors: {
         white: '#FFFFFF',

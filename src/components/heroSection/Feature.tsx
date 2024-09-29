@@ -20,7 +20,7 @@ const Feature: FC<FeatureType> = ({ icon, title, description, children }) => {
             width={20}
             height={20}
           />
-          <span className='text-base font-semibold '>{title}</span>
+          <span className='text-base font-semibold family-lota '>{title}</span>
         </div>
         <p className='text-text font-normal text-xs mt-2'>{description}</p>
       </div>

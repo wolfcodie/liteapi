@@ -2,6 +2,27 @@
 @tailwind components;
 @tailwind utilities;
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+
+
+
+
+@font-face {
+  font-family: 'Lota Grotesque Alt 1 Semi Bold';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Lota Grotesque Alt 1 Semi Bold'), url('../../public/fonts/lota-grotesque-alt-1-webfont/Los\ Andes\ \ Lota\ Grotesque\ Alt\ 1\ Semi\ Bold.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Lota Grotesque Alt 1';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Lota Grotesque Alt 1 Regular'),
+    url('../../public/fonts/lota-grotesque-alt-1-webfont/Los\ Andes\ \ Lota\ Grotesque\ Alt\ 1\ Regular\ Italic.woff') format('woff');
+}
+
+
 
 * {
   margin: 0;
@@ -9,6 +30,17 @@
   box-sizing: border-box;
   font-family: 'Inter', sans-serif;
 }
+
+h1 {
+  color: #19172C;
+  text-align: center;
+  font-family: 'Lota Grotesque Alt 1 Semi Bold';
+  font-weight: normal;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 46px;
+}
+
 
 a {
   line-height: 18px;
@@ -224,6 +256,24 @@ button:hover {
   transition: all ease 0.4s;
 }
 
+.family-lota {
+  font-family: 'Lota Grotesque Alt 1 Semi Bold';
+}
+
+
+.apilink {
+  overflow: hidden;
+  color: #585665;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-family: "JetBrains Mono", "serif";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.14px;
+}
+
 @media (max-width:1024px) {
   .navlinks {
     background-color: white;
@@ -245,4 +295,9 @@ button:hover {
     flex-direction: column;
     gap: 20px;
   }
+}
+
+.leaflet-control-zoom,
+.leaflet-bottom {
+  display: none;
 }
