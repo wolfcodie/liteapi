@@ -1,0 +1,36 @@
+<svg width="1200" height="427" viewBox="0 0 1200 427" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g clip-path="url(#clip0_138_2052)">
+<g opacity="0.75">
+<rect width="532" height="430" transform="translate(0 -130.973)" fill="url(#pattern0_138_2052)" fill-opacity="0.04"/>
+<rect width="532" height="430" transform="translate(532 -130.973)" fill="url(#pattern1_138_2052)" fill-opacity="0.04"/>
+<rect width="532" height="430" transform="translate(1064 -130.973)" fill="url(#pattern2_138_2052)" fill-opacity="0.04"/>
+<rect width="532" height="430" transform="translate(0 299.027)" fill="url(#pattern3_138_2052)" fill-opacity="0.04"/>
+<rect width="532" height="430" transform="translate(532 299.027)" fill="url(#pattern4_138_2052)" fill-opacity="0.04"/>
+<rect width="532" height="430" transform="translate(1064 299.027)" fill="url(#pattern5_138_2052)" fill-opacity="0.04"/>
+</g>
+</g>
+<defs>
+<pattern id="pattern0_138_2052" patternContentUnits="objectBoundingBox" width="0.0150376" height="0.0186047">
+<use xlink:href="#image0_138_2052" transform="scale(0.0018797 0.00232558)"/>
+</pattern>
+<pattern id="pattern1_138_2052" patternContentUnits="objectBoundingBox" width="0.0150376" height="0.0186047">
+<use xlink:href="#image0_138_2052" transform="scale(0.0018797 0.00232558)"/>
+</pattern>
+<pattern id="pattern2_138_2052" patternContentUnits="objectBoundingBox" width="0.0150376" height="0.0186047">
+<use xlink:href="#image0_138_2052" transform="scale(0.0018797 0.00232558)"/>
+</pattern>
+<pattern id="pattern3_138_2052" patternContentUnits="objectBoundingBox" width="0.0150376" height="0.0186047">
+<use xlink:href="#image0_138_2052" transform="scale(0.0018797 0.00232558)"/>
+</pattern>
+<pattern id="pattern4_138_2052" patternContentUnits="objectBoundingBox" width="0.0150376" height="0.0186047">
+<use xlink:href="#image0_138_2052" transform="scale(0.0018797 0.00232558)"/>
+</pattern>
+<pattern id="pattern5_138_2052" patternContentUnits="objectBoundingBox" width="0.0150376" height="0.0186047">
+<use xlink:href="#image0_138_2052" transform="scale(0.0018797 0.00232558)"/>
+</pattern>
+<clipPath id="clip0_138_2052">
+<rect width="1200" height="427" rx="28" fill="white"/>
+</clipPath>
+<image id="image0_138_2052" width="8" height="8" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAAAXNSR0IArs4c6QAAACZJREFUGBljYGBg+A/EuAA+OVx6CIiDjEQxlomABipJo9iJZuZ/AC8NBf1LtGs1AAAAAElFTkSuQmCC"/>
+</defs>
+</svg>

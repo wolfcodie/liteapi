@@ -31,10 +31,29 @@ pre {
   font-weight: 500;
 }
 
-.main-bg {
-
-  background: radial-gradient(100% 100% at 51.11% 0%, rgba(255, 255, 255, 0.00) 40%, rgba(246, 198, 253, 0.60) 69.34%, rgba(185, 156, 241, 0.80) 89.61%, #9C91FB 110%);
+img,
+video {
+  max-width: unset !important;
 }
+
+.main-bg {
+  background:
+    radial-gradient(circle at top center,
+      rgba(255, 255, 255, 1) 20%,
+      /* Strong white at the top center */
+      rgba(255, 255, 255, 0) 60%),
+    /* Fade to transparent */
+    /* Existing radial gradient */
+    radial-gradient(140% 100% at 51.11% -10%,
+      rgba(255, 255, 255, 0) 30%,
+      rgba(246, 198, 253, 0.6) 60.34%,
+      rgba(185, 156, 241, 0.8) 79.61%,
+      #9C91FB 110%),
+    /* Image with positioning */
+    url('../../public/icons/heroOverlay.svg');
+
+}
+
 
 .rate {
   background-color: #21631A;
@@ -46,4 +65,44 @@ pre {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.featureSection {
+  border-radius: 24px;
+  border: 1px solid #F1F1F2;
+  box-shadow: 0px 3px 8px 0px rgba(241, 241, 242, 0.40);
+  background: url('../../public/icons/overlay.svg');
+  background-color: #FAFAFB;
+  padding: 56px;
+  display: flex;
+  gap: 40px;
+}
+
+.startSection {
+  border-radius: 24px;
+  box-shadow: 0px 3px 8px 0px rgba(241, 241, 242, 0.40);
+
+  background: url('../../public/icons/overlay.svg'), linear-gradient(180deg, rgba(243, 241, 253, 0.00) 0%, #F3F1FD 80%);
+
+  padding: 56px;
+  display: flex;
+  margin-top: 80px;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.layers {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+  max-width: 100% !important;
+}
+
+.featureSection pre {
+  max-width: 100%;
+  max-height: 300px;
 }

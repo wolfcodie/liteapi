@@ -9,7 +9,7 @@ import HotelsCards from '../common/HotelsCards';
 function HeroPage() {
   return (
     <section className=' flex flex-col justify-center items-center main-bg pb-24'>
-      <div className='w-[50%] mx-auto mt-20 text-center'>
+      <div className='w-[50%] max-md:w-[90%] mx-auto mt-20 text-center'>
         <h5 className='text-primary text-sm'>Solutions</h5>
         <h1 className='font-semibold text-[40px] mb-8 mt-3'>
           From in-depth API access to a fully-branded white label website
@@ -19,12 +19,12 @@ function HeroPage() {
           <Button className='bg-transaprent text-black'>View docs</Button>
         </div>
       </div>
-      <div className='features flex items-center justify-center gap-16 w-[80%] container mt-28'>
+      <div className='features flex items-center justify-center gap-16 max-lg:flex-wrap  max-md:w-full max-xl:gap-2 w-[80%] container mt-28 max-lg:mt-20'>
         <Feature
           icon='code-square.svg'
           title='Full code'
           description='Full custom API integration'>
-          <ApiTest />
+          <ApiTest className='rounded-lg' />
           <CodeViewer language='javascript' />
         </Feature>
         <Feature

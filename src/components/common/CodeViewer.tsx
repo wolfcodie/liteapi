@@ -4,6 +4,7 @@ import { lightfair } from 'react-syntax-highlighter/dist/esm/styles/hljs';
 
 interface CodeViewerProps {
   language: string;
+  className?: string;
 }
 const codeString = `
 {         "roomTypeId": "GMYS2",
@@ -144,10 +145,10 @@ const codeString = `
           ]
         }
 `;
-const CodeViewer: React.FC<CodeViewerProps> = ({ language }) => {
+const CodeViewer: React.FC<CodeViewerProps> = ({ language, className }) => {
   return (
-    <div className='border border-[#F6F6F7] rounded-xl'>
-      <div className='flex items-center  p-[10px]'>
+    <div className={`border border-[#F6F6F7] rounded-xl w-full ${className}`}>
+      <div className='flex items-center  p-[10px] border-b border-[#F6F6F7]'>
         <span className='text-[8px] uppercase font-normal text-black tracking-widest'>
           Response
         </span>
