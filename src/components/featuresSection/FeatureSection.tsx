@@ -18,8 +18,14 @@ const FeatureSection: FC<FeatureType> = ({
   reversed,
 }) => {
   return (
-    <div className='featureSection overflow-hidden h-[561px] max-lg:h-fit max-lg:p-5 max-lg:flex-col'>
-      <div className={`flex flex-col flex-1 gap-3 ${reversed && 'order-2'}`}>
+    <div
+      className={`featureSection ${
+        reversed ? 'reversed' : ''
+      } relative overflow-hidden h-[561px] max-lg:h-fit max-lg:p-5 max-lg:flex-col`}>
+      <div
+        className={`flex flex-col flex-1 gap-3 ${
+          reversed == true && 'order-2'
+        }`}>
         <div className='flex items-center gap-2'>
           <Image
             src={`/icons/${icon}`}

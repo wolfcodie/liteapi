@@ -98,7 +98,7 @@ video {
   bottom: 0;
   width: 100%;
   height: 100%;
-  z-index: 100;
+  z-index: 50;
   max-width: 100% !important;
 }
 
@@ -146,16 +146,103 @@ footer li {
   color: white;
 }
 
+.featureSection.reversed::after {
+  content: "";
+  height: 50%;
+  width: 30%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 100;
+  background-color: white;
+  filter: blur(70px);
+}
+
+.featureSection::after {
+  content: "";
+  height: 50%;
+  width: 30%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 100;
+  background-color: white;
+  filter: blur(70px);
+}
+
 .footer-bottom h4,
 .footer-bottom li a {
   color: #DCDCDF;
   font-size: 12px;
   font-style: normal;
   font-weight: 400;
-  line-height: normal;
+  line-height: 24px;
   text-transform: capitalize;
+}
+
+.hotels-gallery {
+  overflow: hidden;
+  border-radius: 4px;
+  display: flex;
+  width: 70px;
+  height: 87px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.28px;
+  flex-shrink: 0;
+
+}
+
+.main-picture {
+  height: 60px;
+  overflow: hidden;
+  width: 100%;
+  overflow: hidden;
+}
+
+.main-picture>img {
+  height: 100%;
+  width: 100%;
+}
+
+.sub-gallery {
+  width: 100%;
+}
+
+.sub-picture {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
 }
 
 .footer-bottom li {
   list-style: disc;
+}
+
+button:hover {
+  opacity: 0.6;
+  transition: all ease 0.4s;
+}
+
+@media (max-width:1024px) {
+  .navlinks {
+    background-color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    flex-direction: column;
+    z-index: 100;
+    padding: 10%;
+  }
+
+  .navlinks .actions {
+    z-index: 100;
+  }
+
+  .navlinks ul {
+    flex-direction: column;
+    gap: 20px;
+  }
 }

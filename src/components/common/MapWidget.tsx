@@ -9,7 +9,9 @@ function MapWidget({ size = 'small' }: MapWidgetProps) {
   return (
     <div
       className={`mt-2 shadow-lg ${
-        size === 'large' ? 'p-6 gap-4 rounded-2xl' : 'p-2 gap-1 rounded-lg'
+        size === 'large'
+          ? 'p-6 gap-4 rounded-2xl h-[120%]'
+          : 'p-2 gap-1 rounded-lg'
       }  flex flex-col bg-white`}>
       <div className='flex flex-col gap-1 text-center'>
         <div className='flex items-center justify-center gap-1'>

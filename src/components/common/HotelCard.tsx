@@ -5,10 +5,10 @@ import RatingStars from '../heroSection/RatingStars';
 function HotelCard() {
   return (
     <div className='border border-[#F6F6F7] rounded-[4px] flex items-center p-[2px] w-full h-[90px]'>
-      <div className=''>
-        <div className='w-full h-full mb-1 relative'>
+      <div className='hotels-gallery'>
+        <div className=' main-picture relative'>
           <Image
-            className='w-full h-full rounded-t-[4px]'
+            className='rounded-t-[4px]'
             src={'/images/image.png'}
             alt=''
             height={20}
@@ -18,17 +18,17 @@ function HotelCard() {
             <Image src={'/icons/heart.svg'} alt='' height={5} width={5} />
           </circle>
         </div>
-        <div className='flex h-1/3 gap-1'>
+        <div className='sub-gallery flex h-1/3 gap-1'>
           <Image
-            className='h-full w-1/2 rounded-bl-[4px]'
-            src={'/images/image.png'}
+            className=' sub-picture rounded-bl-[4px]'
+            src={'/images/room-1.png'}
             alt=''
             height={10}
             width={20}
           />
           <Image
-            className='h-full w-1/2 rounded-br-[4px]'
-            src={'/images/image.png'}
+            className='sub-picture rounded-br-[4px]'
+            src={'/images/room-2.png'}
             alt=''
             height={10}
             width={20}

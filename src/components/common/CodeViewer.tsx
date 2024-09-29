@@ -147,7 +147,10 @@ const codeString = `
 `;
 const CodeViewer: React.FC<CodeViewerProps> = ({ language, className }) => {
   return (
-    <div className={`border border-[#F6F6F7] rounded-xl w-full ${className}`}>
+    <div
+      className={`border border-[#F6F6F7] rounded-xl w-full ${
+        className ? className : ''
+      }`}>
       <div className='flex items-center  p-[10px] border-b border-[#F6F6F7]'>
         <span className='text-[8px] uppercase font-normal text-black tracking-widest'>
           Response

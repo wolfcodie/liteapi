@@ -39,7 +39,7 @@ function FeaturesSection() {
         subTitle='Low code — Widgets '
         description='If you’re looking for a quicker way to add travel functionality to your website or platform, our low code widgets are the perfect solution. Designed for easy implementation, these widgets allow you to enhance your site with powerful travel tools without needing extensive coding knowledge. Get up and running quickly with all the essential features your users need.'
         icon='grid-web.svg'>
-        <div className='flex-1 px-6 max-lg:px-0 order-1'>
+        <div className='flex-1 px-6 max-lg:px-0 order-1 overflow-hidden'>
           <MapWidget size='large' />
         </div>
       </FeatureSection>
@@ -72,7 +72,7 @@ function FeaturesSection() {
           animate={{ opacity: isInView ? 1 : 0, y: isInView ? '0%' : '200%' }}
           transition={{ duration: 1 }}>
           <img
-            className='w-full  max-lg:h-[100%]'
+            className='w-full max-lg:h-[100%]'
             src='icons/layers.svg'
             alt='Background'
           />
