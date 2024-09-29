@@ -7,6 +7,7 @@ interface FeatureType {
   subTitle: string;
   icon: string;
   children: React.ReactNode;
+  reversed?: boolean;
 }
 const FeatureSection: FC<FeatureType> = ({
   icon,
@@ -14,10 +15,11 @@ const FeatureSection: FC<FeatureType> = ({
   subTitle,
   description,
   children,
+  reversed,
 }) => {
   return (
     <div className='featureSection overflow-hidden h-[561px] max-lg:h-fit max-lg:p-5 max-lg:flex-col'>
-      <div className='flex flex-col flex-1 gap-3 '>
+      <div className={`flex flex-col flex-1 gap-3 ${reversed && 'order-2'}`}>
         <div className='flex items-center gap-2'>
           <Image
             src={`/icons/${icon}`}

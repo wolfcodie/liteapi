@@ -34,11 +34,12 @@ function FeaturesSection() {
         </div>
       </FeatureSection>
       <FeatureSection
+        reversed={true}
         title='Widgets'
         subTitle='Low code — Widgets '
         description='If you’re looking for a quicker way to add travel functionality to your website or platform, our low code widgets are the perfect solution. Designed for easy implementation, these widgets allow you to enhance your site with powerful travel tools without needing extensive coding knowledge. Get up and running quickly with all the essential features your users need.'
         icon='grid-web.svg'>
-        <div className='flex-1 px-6 max-lg:px-0'>
+        <div className='flex-1 px-6 max-lg:px-0 order-1'>
           <MapWidget size='large' />
         </div>
       </FeatureSection>
