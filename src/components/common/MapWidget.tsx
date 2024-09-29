@@ -1,10 +1,13 @@
+'use client';
 import React from 'react';
-import Map from './Map';
+import dynamic from 'next/dynamic';
 
 interface MapWidgetProps {
   size?: 'small' | 'large'; // Accept size prop
 }
-
+const Map = dynamic(() => import('./Map'), {
+  ssr: false, // This will ensure the component only renders on the client side
+});
 function MapWidget({ size = 'small' }: MapWidgetProps) {
   return (
     <div
