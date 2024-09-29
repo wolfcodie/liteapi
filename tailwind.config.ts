@@ -18,10 +18,15 @@ const config: Config = {
         secondary: '#FF6347',
         black: '#19172C',
         text: '#585665',
+        success: '#067647',
+        successLight: '#DFF4EA',
       },
       backgroundImage: (theme) => ({
         'gradient-to-r': 'linear-gradient(to right, #6EE7B7, #3B82F6)',
       }),
+      boxShadow: {
+        custom: '0 4px 10px rgba(214, 210, 255, 0.2)',
+      },
     },
   },
   plugins: [],

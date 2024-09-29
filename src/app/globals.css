@@ -9,3 +9,19 @@
   box-sizing: border-box;
   font-family: 'Inter', sans-serif;
 }
+
+a {
+  line-height: 18px;
+}
+
+.feature-card {
+  box-shadow: 0 4px 10px rgba(214, 210, 255, 0.2);
+}
+
+pre {
+  font-size: 10px !important;
+}
+
+.linenumber {
+  color: rgba(86, 84, 112, 0.4) !important;
+}
